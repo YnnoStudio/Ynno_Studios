@@ -23,44 +23,56 @@
 
         /* mobile view */
         @media (max-width: 650px) {
-    main {
-        flex-direction: column;
-    }
+            main {
+                flex-direction: column;
+            }
+            .content {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
 
-    .content {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-html {
-    scroll-behavior: smooth;
-}
+        /* Navigation Styles */
+        .nav-container {
+            display: flex;
+            justify-content: space-around; /* Evenly distribute items */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        /* Ensure buttons take equal width */
+        .nav-button {
+            flex: 1; /* Allow buttons to grow and shrink equally */
+            text-align: center; /* Center align text */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="w3-content w3-black" style="max-width:1500px;">
 
-
     <!-- Navigation Menu -->
-<!-- Navigation Menu -->
-<nav class="w3-top w3-black">
-    <div class="w3-row w3-padding">
-        <div class="w3-col s2">
-            <a href="#home" class="w3-button w3-block">HOME</a>
+    <nav class="w3-top w3-black">
+        <div class="w3-row w3-padding nav-container">
+            <div class="w3-col nav-button">
+                <a href="#home" class="w3-button w3-block">HOME</a>
+            </div>
+            <div class="w3-col nav-button">
+                <a href="#Template" class="w3-button w3-block">TEMPLATE</a>
+            </div>
+            <div class="w3-col nav-button">
+                <a href="#Backdrop" class="w3-button w3-block">BACKDROP</a>
+            </div>
+            <div class="w3-col nav-button">
+                <a href="#Packages" class="w3-button w3-block">PACKAGES</a>
+            </div>
+            <div class="w3-col nav-button">
+                <a href="#About" class="w3-button w3-block">ABOUT</a>
+            </div>
         </div>
-        <div class="w3-col s2">
-            <a href="#Template" class="w3-button w3-block">TEMPLATE</a>
-        </div>
-        <div class="w3-col s2">
-            <a href="#Backdrop" class="w3-button w3-block">BACKDROP</a>
-        </div>
-        <div class="w3-col s2">
-            <a href="#Packages" class="w3-button w3-block">PACKAGES</a>
-        </div>
-        <div class="w3-col s2">
-            <a href="#About" class="w3-button w3-block">ABOUT</a>
-        </div>
-    </div>
-</nav>
+    </nav>
+
 
 <!-- Header with Slideshow (ID moved here for "Home" to link) -->
    <header id="home" class="w3-display-container w3-center">
