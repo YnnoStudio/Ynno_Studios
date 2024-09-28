@@ -15,10 +15,23 @@
       .mySlides {
           display: none
       }
+      .main-container {
+    max-width: 1200px; /* Set your desired max width here */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+    background-color: black; /* Set the background color to black */
+}
+
+/* Optional: If you want a margin effect with a black background around the container */
+body {
+    margin: 0; /* Remove default body margin */
+    background-color: black; /* Set body background color to black */
+}
+
   </style>
 </head>
 <body>
-
+  <div class="main-container">
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
@@ -295,9 +308,6 @@ img {
                     </span>
                 </li>
                 <img src="Elite_Starters.png" style="width:100%">
-                <li class="w3-padding-20 w3-center">
-                    <h2 class="w3-block"><b>PHP 8,999.00</b></h2>
-                </li>
                 <li class="w3-light-grey w3-padding-120">
                     <button 
                         class="w3-button w3-block w3-red w3-round w3-round-large" 
@@ -320,12 +330,7 @@ img {
                 </li>
                 <!-- Image -->
                 <img src="VIP_Experience.png" style="width:100%">
-    
-                <!-- Price Section -->
-                <li class="w3-padding-20 w3-center">
-                    <h2 class="w3-block"><b>PHP 10,999.00</b></h2>
-                </li>
-    
+
                 <!-- Booking Button -->
                 <li class="w3-light-grey w3-padding-120">
                     <button 
