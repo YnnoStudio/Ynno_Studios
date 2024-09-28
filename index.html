@@ -22,32 +22,36 @@
         }
 
         /* mobile view */
-@media (max-width: 650px) {
-    main {
-        flex-direction: column;
-    }
-    .content {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+        @media (max-width: 650px) {
+            main {
+                flex-direction: column;
+            }
+            .content {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
-    /* Adjust Navigation Padding and Font Size */
-    .w3-button {
-        padding: 8px; /* Adjust as needed */
-        font-size: 14px; /* Adjust as needed */
-    }
+            /* Adjust Navigation Padding and Font Size */
+            .w3-button {
+                padding: 8px; /* Adjust as needed */
+                font-size: 14px; /* Adjust as needed */
+                min-width: 120px; /* Minimum width for each button */
+            }
 
-    /* Ensure text doesn't overflow */
-    .nav-container {
-        overflow: hidden; /* Prevent overflow issues */
-    }
+            /* Preventing navigation items from stacking */
+            .nav-container {
+                display: flex;
+                justify-content: space-between; /* Evenly distribute items */
+                overflow: hidden; /* Prevent overflow issues */
+                flex-wrap: nowrap; /* Prevent items from wrapping */
+            }
         }
 
         /* Navigation Styles */
         .nav-container {
             display: flex;
             justify-content: space-around; /* Evenly distribute items */
-            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            flex-wrap: nowrap; /* Prevent items from wrapping */
         }
 
         /* Ensure buttons take equal width */
@@ -83,7 +87,8 @@
             </div>
         </div>
     </nav>
-
+</body>
+</html>
 
 <!-- Header with Slideshow (ID moved here for "Home" to link) -->
    <header id="home" class="w3-display-container w3-center">
