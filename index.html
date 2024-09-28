@@ -25,11 +25,19 @@
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
               class="fa fa-bars"></i></a>
-      <a href="Home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#Home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
       <a href="#Template" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LAYOUT</a>
       <a href="#Backdrop" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BACKDROP</a>
       <a href="#Packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PACKAGES</a>
       <a href="#About" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Home" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="Home" class="w3-bar-item w3-button">Extras</a>
+            <a href="Home" class="w3-bar-item w3-button">Media</a>
+        </div>
+    </div>
       <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
               class="fa fa-search"></i></a>
   </div>
@@ -45,9 +53,8 @@
 </body>
 </html>
 
-
 <!-- Header with Slideshow (ID moved here for "Home" to link) -->
-   <header id="home" class="w3-display-container w3-center">
+   <header id="Home" class="w3-display-container w3-center">
     <button class="w3-button w3-block custom-light-blue w3-hide-large w3-hide-medium" onclick="document.getElementById('booking').style.display='block'">Book Now</button>
     <div class="mySlides w3-animate-opacity">
       <img class="w3-image" src="https://www.w3schools.com/w3images/app.jpg" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
@@ -358,41 +365,63 @@
     </footer>
 
     <!-- JavaScript -->
-    <script>
-        // Slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
+    <!-- JavaScript -->
+<script>
+  // Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
+  // Function to increment or decrement the slide index
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
 
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = x.length; }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
+  // Function to display the correct slide
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = x.length; }
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+  }
 
-        // Tab functionality
-        function openMenu(evt, menuName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("menu");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";  
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
-            }
-            document.getElementById(menuName).style.display = "block";  
-            evt.currentTarget.className += " w3-light-grey";
-        }
-    </script>
+  // Tab functionality
+  function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("menu");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " w3-light-grey";
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+
 
 </body>
 </html>
