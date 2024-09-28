@@ -22,14 +22,25 @@
         }
 
         /* mobile view */
-        @media (max-width: 650px) {
-            main {
-                flex-direction: column;
-            }
-            .content {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+@media (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust Navigation Padding and Font Size */
+    .w3-button {
+        padding: 8px; /* Adjust as needed */
+        font-size: 14px; /* Adjust as needed */
+    }
+
+    /* Ensure text doesn't overflow */
+    .nav-container {
+        overflow: hidden; /* Prevent overflow issues */
+    }
         }
 
         /* Navigation Styles */
