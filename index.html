@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ynno's Studio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+          font-family: "Lato", sans-serif
+      }
+
+      .mySlides {
+          display: none
+      }
+      .main-container {
+    max-width: 1200px; /* Set your desired max width here */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+    background-color: black; /* Set the background color to black */
+}
+
+/* Optional: If you want a margin effect with a black background around the container */
+body {
+    margin: 0; /* Remove default body margin */
+    background-color: black; /* Set body background color to black */
+}
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+              class="fa fa-bars"></i></a>
+      <a href="#Home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#Template" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LAYOUT</a>
+      <a href="#Backdrop" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BACKDROP</a>
+      <a href="#Packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PACKAGES</a>
+      <a href="#About" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Home" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="Home" class="w3-bar-item w3-button">Extras</a>
+            <a href="Home" class="w3-bar-item w3-button">Media</a>
+        </div>
+    </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+              class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#Template" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LAYOUT</a>
+  <a href="#Backdrop" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BACKDROP</a>
+  <a href="#Packages" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PACKAGES</a>
+  <a href="About" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+</div>
+</body>
+</html>
+
+<!-- Header with Slideshow (ID moved here for "Home" to link) -->
+   <header id="Home" class="w3-display-container w3-center">
+    <button class="w3-button w3-block custom-light-blue w3-hide-large w3-hide-medium" onclick="document.getElementById('booking').style.display='block'">Book Now</button>
+    <div class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="https://www.w3schools.com/w3images/app.jpg" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+          <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+              <h1 class="w3-xlarge">Capture Memories with Ynno's Digital Mirror</h1>
+              <hr class="w3-opacity">
+              <p>Book our photobooth for your next event</p>
+              <p><button class="w3-button w3-block custom-light-blue w3-round" onclick="document.getElementById('booking').style.display='block'">Book Now</button></p>
+          </div>
+      </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="https://www.w3schools.com/w3images/app2.jpg" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+            <h1 class="w3-xlarge">Capture Memories with Ynno's Digital Mirror</h1>
+            <hr class="w3-opacity">
+            <p>Book our photobooth for your next event</p>
+            <p><button class="w3-button w3-block custom-light-blue w3-round" onclick="document.getElementById('booking').style.display='block'">Book Now</button></p>
+        </div>
+    </div>
+</div>
+<div class="mySlides w3-animate-opacity">
+  <img class="w3-image" src="https://www.w3schools.com/w3images/app4.jpg" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+  <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Capture Memories with Ynno's Digital Mirror</h1>
+          <hr class="w3-opacity">
+          <p>Book our photobooth for your next event</p>
+          <p><button class="w3-button w3-block custom-light-blue w3-round" onclick="document.getElementById('booking').style.display='block'">Book Now</button></p>
+      </div>
+  </div>
+</div>
+    <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small custom-gold" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+    <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- CSS for Cursive Font and Larger Text -->
+    <style>
+        .app-section-heading {
+            font-size: 100px;
+            font-family: 'Qalisha Signature Serif Regular', cursive;
+            font-weight: bold;
+            color: #fdb515;
+            text-align: center; /* Center the heading */
+            margin-left: 20px; /* Space to the left */
+            margin-right: 20px; /* Space to the right */
+            padding: 18px 0; /* Adjust padding as needed (top-bottom, left-right) */
+    
+    }
+            /* Medium screens (tablets) */
+@media (max-width: 780x) {
+    .app-section-heading {
+        font-size: 80px; /* Smaller font size for tablets */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 650px) {
+    .app-section-heading {
+        font-size: 70px; /* Even smaller font size for phones */
+    }
+}
+    </style>
+<style>
+    .custom-light-blue {
+        background-color: #003362; /* Adjust this color code as needed */
+    }
+        /* Medium screens (tablets) */
+        @media (max-width: 780px) {
+    .custom-light-blue {
+        padding: 1.5em 1em; /* Less padding for tablets */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 650px) {
+    .custom-light-blue {
+        padding: 1em 0.5em; /* Even less padding for phones */
+    }
+}
+    .custom-gold {
+        background-color: #fdb515; /* Adjust this color code as needed */
+    }
+    .custom-orange {
+        background-color: #ffd700; /* Adjust this color code as needed */
+    }
+    .custom-bblue {
+        background-color: #0077ff; /* Adjust this color code as needed */
+    }
+    html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+
+<!-- Template Section -->
+<div class="w3-padding-0 custom-light-blue" id="Template"> <!-- Change padding to 0 -->
+  <h1 class="app-section-heading"><b>Layout</b></h1>
+  <div class="backdrop-container">
+      <img src="Layout_Design.png" class="backdrop-image"> <!-- Remove the wrapper -->
+  </div>
+</div>
+
+<!-- CSS to maximize the image width -->
+<style>
+  body {
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+  }
+
+  .custom-light-blue {
+      padding: 0; /* Ensure no padding for full width */
+  }
+
+  .backdrop-container {
+      width: 100%; /* Ensure the container uses full width */
+      overflow: hidden; /* Prevent overflow issues */
+  }
+
+  .backdrop-image {
+      width: 100%; /* Ensure the image fills the container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove bottom whitespace */
+  }
+
+  /* Adjust image size on smaller screens */
+  @media screen and (max-width: 600px) {
+      .backdrop-image {
+          width: 100%; /* Ensure full width on smaller screens */
+      }
+  }
+</style>
+
+<!-- Adding a spacer to separate sections -->
+
+<!-- Backdrop Section -->
+<div class="w3-padding-0 custom-light-blue" id="Backdrop"> <!-- Change padding to 0 -->
+    <h1 class="app-section-heading"><b>Backdrop</b></h1>
+    <div class="backdrop-container">
+        <img src="Photo_Design.png" class="backdrop-image"> <!-- Remove the wrapper -->
+    </div>
+</div>
+
+<!-- CSS to maximize the image width -->
+<style>
+    body {
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+
+    .custom-light-blue {
+        padding: 0; /* Ensure no padding for full width */
+    }
+
+    .backdrop-container {
+        width: 100%; /* Ensure the container uses full width */
+        overflow: hidden; /* Prevent overflow issues */
+    }
+
+    .backdrop-image {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom whitespace */
+    }
+
+    /* Adjust image size on smaller screens */
+    @media screen and (max-width: 600px) {
+        .backdrop-image {
+            width: 100%; /* Ensure full width on smaller screens */
+        }
+    }
+</style>
+
+
+
+<!-- Adding another spacer to separate sections -->
+
+<!-- Pricing Section -->
+<div class="w3-padding-65 custom-light-blue" id="Packages">
+  <h1 class="app-section-heading"><b>Packages</b></h1>
+  <div class="w3-row">
+      <div class="w3-row-padding" style="margin-top:-30px">
+          <!-- Elite Starters Section -->
+          <div class="w3-half w3-section">
+            <ul class="w3-ul w3-card w3-white">
+                <!-- VIP Experience title -->
+                <!-- Image -->
+                <li style="padding: 10px;"> <!-- Add padding to the list item -->
+                    <div style="background-color: white; padding: 5px; margin: 1.5px;"> <!-- Add a wrapper div -->
+                        <img src="Elite_Starters.png" style="width: 100%; margin: 0; display: block;"> <!-- Remove margin from img -->
+                    </div>
+                </li>
+
+                <!-- Booking Button -->
+                <li class="w3-light-grey w3-padding-120">
+                    <button 
+                        class="w3-button w3-block w3-red w3-round w3-round-large" 
+                        style="padding: 20px 0; font-size: 24px;" 
+                        onclick="document.getElementById('booking').style.display='block'">
+                        Book Now
+                    </button>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- VIP Experience Section -->
+          <div class="w3-half w3-section">
+              <ul class="w3-ul w3-card w3-white">
+                  <!-- VIP Experience title -->
+                  <!-- Image -->
+                  <li style="padding: 10px;"> <!-- Add padding to the list item -->
+                      <div style="background-color: white; padding: 5px; margin: 1.5px;"> <!-- Add a wrapper div -->
+                          <img src="VIP_Experience.png" style="width: 100%; margin: 0; display: block;"> <!-- Remove margin from img -->
+                      </div>
+                  </li>
+
+                  <!-- Booking Button -->
+                  <li class="w3-light-grey w3-padding-120">
+                      <button 
+                          class="w3-button w3-block w3-red w3-round w3-round-large" 
+                          style="padding: 20px 0; font-size: 24px;" 
+                          onclick="document.getElementById('booking').style.display='block'">
+                          Book Now
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+    
+        <ul class="w3-ul w3-card w3-white margin-top: -20px">
+            <li style="background-color: #ffd700; color: black;" class="w3-xlarge w3-padding-10 w3-center margin-top: -20px">ADD ONS</li>
+            <li class="w3-padding-10 w3-center" style="color: #003362;"><b style="color: #003362;"><b>+ PHP 600.00 - Upgrade to Magnetic Prints (Elite Startes)</b></li>
+            <li class="w3-padding-10 w3-center" style="color: #003362;"><b style="color: #003362;"><b>+ PHP 800.00 - Upgrade to Magnetic Prints (VIP Experience)</b></li>
+            <li class="w3-padding-10 w3-center" style="color: #003362;"><b style="color: #003362;"><b>+ PHP1,500.00/hr - for prints with photo standee</b></li>
+            <li class="w3-padding-10 w3-center" style="color: #003362;"><b style="color: #003362;"><b>+ PHP1,800.00/hr - for magnetic prints</b></li>
+        <div class="w3-container">
+              <div class="text-border" style="height: auto; font-size: xx-small;">
+                <p>The best team in the world.</p>
+                <p>*Meals will be provided by the client​. No transportation fee within Quezon City and Marikina City. For other areas, Grab rates​ may apply​
+        <br>
+      </div>
+
+<!-- Adding a spacer to separate sections -->
+
+<!-- Adding a spacer to separate sections -->
+
+<!-- Adding another spacer to separate sections -->
+<div class="w3-black" style="padding: 6px 0; margin-top: 40px; margin-left: -50px; margin-right: -20px"></div>
+
+<!-- The App Section -->
+<div class="w3-padding-65 w3-center custom-light-blue" id="About">
+    <h1 class="app-section-heading"><b>Meet the OWNERS</b></h1>
+    <div class="w3-padding-90 w3-white">
+        <div class="w3-container designer-border" id="designers" style="margin-top:-20px">
+            <div class="w3-panel w3-border">
+                <div class="w3-container">
+              <div class="text-border">
+                <p>The best team in the world.</p>
+                <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p><b>Our designers are thoughtfully chosen</b>:</p>
+              </div>
+            </div>
+        </div>        
+        
+          <!-- The Team -->
+          <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                <img src="photo.png.png" alt="John" style="width:100%">
+                <div class="w3-container">
+                  <h3>Luigi</h3>
+                  <p class="w3-opacity">CEO & Founder</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                <img src="photo.png.png" alt="Jane" style="width:100%">
+                <div class="w3-container">
+                  <h3>Charina</h3>
+                  <p class="w3-opacity">Designer</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col m4 w3-margin-bottom">
+              <div class="w3-light-grey">
+                <img src="photo.png.png" alt="Mike" style="width:100%">
+                <div class="w3-container">
+                  <h3>Ynno</h3>
+                  <p class="w3-opacity">Architect</p>
+                  <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Booking Section -->
+<div id="booking" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-padding-32">
+      <div class="w3-container w3-white">
+          <i onclick="document.getElementById('booking').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right"></i>
+          <h2 class="w3-wide">Book Now</h2>
+          <p>Fill in the form below to book your event with us, and we'll contact you shortly.</p>
+          <form id="bookingForm">
+              <p><input class="w3-input w3-border" type="text" name="name" id="name" placeholder="Your Name" required></p>
+              <p><input class="w3-input w3-border" type="tel" name="contact" id="contact" placeholder="Contact Number" required></p>
+              <p><input class="w3-input w3-border" type="number" name="pax" id="pax" placeholder="Number of Guests" required></p>
+              <p>
+                  <select class="w3-select w3-border" name="package" id="package" required>
+                      <option value="" disabled selected>Choose a Package</option>
+                      <option value="Elite Starters Package">Elite Starters Package</option>
+                      <option value="VIP Experience Package">VIP Experience Package</option>
+                  </select>
+              </p>
+              <p><input class="w3-input w3-border" type="text" name="location" id="location" placeholder="Event Location" required></p>
+              <p><button class="w3-button w3-block w3-green w3-padding-large" type="submit">Submit Booking</button></p>
+          </form>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form values
+      var name = document.getElementById("name").value;
+      var contact = document.getElementById("contact").value;
+      var pax = document.getElementById("pax").value;
+      var packageType = document.getElementById("package").value; // This should now capture the correct package
+      var location = document.getElementById("location").value;
+
+      // Construct a message to send via Messenger
+      var message = `Booking details:\nName: ${name}\nContact: ${contact}\nGuests: ${pax}\nPackage: ${packageType}\nLocation: ${location}`;
+
+      // Redirect to Messenger with the message
+      var messengerLink = `https://m.me/ynnostudiosdigitalmirrorphotobooth?text=${encodeURIComponent(message)}`;
+      window.open(messengerLink, '_blank'); // Open Messenger in a new tab
+  });
+</script>
+
+
+    <!-- Footer -->
+    <footer class="w3-padding-32 w3-black">
+        <h5 class="w3-center">Follow us on social media</h5>
+        <div class="w3-center">
+            <a href="#" class="w3-button w3-black w3-hover-opacity"><i class="fa fa-facebook w3-xlarge"></i></a>
+            <a href="#" class="w3-button w3-black w3-hover-opacity"><i class="fa fa-instagram w3-xlarge"></i></a>
+            <a href="#" class="w3-button w3-black w3-hover-opacity"><i class="fa fa-twitter w3-xlarge"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- JavaScript -->
+<script>
+  // Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  // Function to increment or decrement the slide index
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  // Function to display the correct slide
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = x.length; }
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+  }
+
+  // Tab functionality
+  function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("menu");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " w3-light-grey";
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+
+
+</body>
+</html>
