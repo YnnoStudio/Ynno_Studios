@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ynno Studios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+    .mySlides {display: none}
+      .main-container {
+    max-width: 1200px; /* Set your desired max width here */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+    background-color: black; /* Set the background color to black */
+}
+
+/* Optional: If you want a margin effect with a black background around the container */
+body {
+    margin: 0; /* Remove default body margin */
+    background-color: black; /* Set body background color to black */
+}
+
+
+    </style>
+  </head>
+<body class="w3-content w3-border-left w3-border-right">
+    
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+              class="fa fa-bars"></i></a>
+      <a href="#Home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#Template" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LAYOUT</a>
+      <a href="#Backdrop" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BACKDROP</a>
+      <a href="#Packages" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PACKAGES</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#Schedule" class="w3-bar-item w3-button">Schedule</a>
+            <a href="#Policy" class="w3-bar-item w3-button">Privacy Policy</a>
+        </div>
+    </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+              class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#Template" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LAYOUT</a>
+  <a href="#Backdrop" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BACKDROP</a>
+  <a href="#Packages" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PACKAGES</a>
+  <a href="#About" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+</div>
+</body>
+</html>
+
+<!-- Header with Slideshow (ID moved here for "Home" to link) -->
+<header id="Home" class="w3-display-container w3-center">
+    <button class="w3-button w3-block custom-light-blue w3-hide-large w3-hide-medium" onclick="window.open('https://m.me/392693543932035', '_blank')">Book Now</button>
+    <div class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="Upper_Banner_1.png" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Transform Every Moment into a Celebration with Ynno's Digital Mirror – Your Happy Memories Await!</h1>
+          <hr class="w3-opacity">
+          <p>Book Our Photobooth and Turn Your Event into a Celebration of Smiles!</p>
+          <p>
+            <button class="w3-button w3-block w3-green w3-round" onclick="window.open('https://m.me/392693543932035', '_blank')">Book Now</button> 
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="Upper_Banner_2.png" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Make Every Moment Shine with Ynno's Digital Mirror – Capture, Share, and Cherish the Joy!</h1>
+          <hr class="w3-opacity">
+          <p>Reserve Our Photobooth for Unforgettable Memories at Your Next Event!</p>
+          <p>
+            <button class="w3-button w3-block custom-bblue w3-round" onclick="window.open('https://m.me/392693543932035', '_blank')">Book Now</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mySlides w3-animate-opacity">
+      <img class="w3-image" src="Upper_Banner_3.png" alt="Photo Booth Image 1" style="max-width:100%; height:auto;">
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Preserve Every Smile with Ynno's Digital Mirror – Your Memories, Our Passion!</h1>
+          <hr class="w3-opacity">
+          <p>Make Memories! Book Our Photobooth for an Epic Event!</p>
+          <p>
+            <button class="w3-button w3-block w3-red w3-round" onclick="window.open('https://m.me/392693543932035', '_blank')">Book Now</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small custom-gold" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+    <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  </header>
+  
+
+<!-- CSS for Cursive Font and Larger Text -->
+    <style>
+        .app-section-heading {
+            font-size: 100px;
+            font-family: 'Qalisha Signature Serif Regular', cursive;
+            font-weight: bold;
+            color: #fdb515;
+            text-align: center; /* Center the heading */
+            margin-left: 20px; /* Space to the left */
+            margin-right: 20px; /* Space to the right */
+            padding: 18px 0; /* Adjust padding as needed (top-bottom, left-right) */
+    
+    }
+            /* Medium screens (tablets) */
+@media (max-width: 780x) {
+    .app-section-heading {
+        font-size: 80px; /* Smaller font size for tablets */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 650px) {
+    .app-section-heading {
+        font-size: 70px; /* Even smaller font size for phones */
+    }
+}
+    </style>
+<style>
+    .custom-light-blue {
+        background-color: #003362; /* Adjust this color code as needed */
+    }
+        /* Medium screens (tablets) */
+        @media (max-width: 780px) {
+    .custom-light-blue {
+        padding: 1.5em 1em; /* Less padding for tablets */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 650px) {
+    .custom-light-blue {
+        padding: 1em 0.5em; /* Even less padding for phones */
+    }
+}
+    .custom-gold {
+        background-color: #fdb515; /* Adjust this color code as needed */
+    }
+    .custom-orange {
+        background-color: #ffd700; /* Adjust this color code as needed */
+    }
+    .custom-bblue {
+        background-color: #0077ff; /* Adjust this color code as needed */
+    }
+    html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+
+<!-- Template Section -->
+<div class="w3-padding-0 custom-light-blue" id="Template"> <!-- Change padding to 0 -->
+  <h1 class="app-section-heading"><b>Layout</b></h1>
+  <div class="backdrop-container">
+      <img src="THE_LAYOUT.png" class="backdrop-image"> <!-- Remove the wrapper -->
+  </div>
+</div>
+
+<!-- CSS to maximize the image width -->
+<style>
+  body {
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+  }
+
+  .custom-light-blue {
+      padding: 0; /* Ensure no padding for full width */
+  }
+
+  .backdrop-container {
+      width: 100%; /* Ensure the container uses full width */
+      overflow: hidden; /* Prevent overflow issues */
+  }
+
+  .backdrop-image {
+      width: 100%; /* Ensure the image fills the container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove bottom whitespace */
+  }
+
+  /* Adjust image size on smaller screens */
+  @media screen and (max-width: 600px) {
+      .backdrop-image {
+          width: 100%; /* Ensure full width on smaller screens */
+      }
+  }
+</style>
+
+<!-- Adding a spacer to separate sections -->
+
+<!-- Backdrop Section -->
+<div class="w3-padding-0 custom-light-blue" id="Backdrop"> <!-- Change padding to 0 -->
+    <h1 class="app-section-heading"><b>Backdrop</b></h1>
+    <div class="backdrop-container">
+        <img src="The_Backdrop_Final.png" class="backdrop-image"> <!-- Remove the wrapper -->
+    </div>
+</div>
+
+<!-- CSS to maximize the image width -->
+<style>
+    body {
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+
+    .custom-light-blue {
+        padding: 0; /* Ensure no padding for full width */
+    }
+
+    .backdrop-container {
+        width: 100%; /* Ensure the container uses full width */
+        overflow: hidden; /* Prevent overflow issues */
+    }
+
+    .backdrop-image {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove bottom whitespace */
+    }
+
+    /* Adjust image size on smaller screens */
+    @media screen and (max-width: 600px) {
+        .backdrop-image {
+            width: 100%; /* Ensure full width on smaller screens */
+        }
+    }
+</style>
+
+<!-- Adding another spacer to separate sections -->
+<!-- Pricing Section -->
+<div class="w3-padding-65 custom-light-blue" id="Packages">
+    <h1 class="app-section-heading"><b>Packages</b></h1>
+    <div class="w3-row">
+        <div class="w3-row-padding" style="margin-top:-30px">
+            <!-- Package Section -->
+<div class="w3-content" style="max-width:1200px; margin: auto;">
+    <div class="w3-row-padding" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  
+      <!-- Frame and Fame Column 1 -->
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-card w3-white">
+          <!-- Image -->
+          <li style="padding: 10px;">
+            <div style="background-color: white; padding: 2px;">
+              <img src="Package 1 - Frame and Fame.png" style="width: 100%; margin: 0; display: block;">
+            </div>
+          </li>
+          <!-- Booking Button -->
+          <li class="w3-light-grey w3-padding-120">
+            <button 
+              class="w3-button w3-block w3-red w3-round w3-round-large" 
+              style="padding: px 0; font-size: 24px;" 
+              onclick="window.open('https://m.me/392693543932035', '_blank')">
+              Book Now
+            </button>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Mirror Magnet Magic Column 2 -->
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-card w3-white">
+          <!-- Image -->
+          <li style="padding: 10px;">
+            <div style="background-color: white; padding: 2px;">
+              <img src="Package 2 - Mirror Magnet Magic.png" style="width: 100%; margin: 0; display: block;">
+            </div>
+          </li>
+          <!-- Booking Button -->
+          <li class="w3-light-grey w3-padding-120">
+            <button 
+              class="w3-button w3-block w3-red w3-round w3-round-large" 
+              style="padding: px 0; font-size: 24px;" 
+              onclick="window.open('https://m.me/392693543932035', '_blank')">
+              Book Now
+            </button>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Stand and Stick Column 3 -->
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-card w3-white">
+          <!-- Image -->
+          <li style="padding: 10px;">
+            <div style="background-color: white; padding: 2px;">
+              <img src="Package 3 - Stand and Stick.png" style="width: 100%; margin: 0; display: block;">
+            </div>
+          </li>
+          <!-- Booking Button -->
+          <li class="w3-light-grey w3-padding-120">
+            <button 
+              class="w3-button w3-block w3-red w3-round w3-round-large" 
+              style="padding: px 0; font-size: 24px;" 
+              onclick="window.open('https://m.me/392693543932035', '_blank')">
+              Book Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Adding another spacer to separate sections -->
+  <ul class="w3-ul w3-card w3-white ">
+
+    <script src="https://embed.ycb.me"	async="true"	data-domain="ynnostudiosdigital"></script>
+
+<!-- Adding a spacer to separate sections -->
+<div class="w3-white" style="padding: 5px; margin-top: 0px; margin-left: auto; margin-right: auto, margin-bottom- 15px"></div>
+
+<div id="Policy" class="w3-container w3-padding-5" style="display: flex; align-items: center; justify-content: space-between;">
+  <!-- Center Text -->
+  <div class="text-border" style="flex-grow: 1; font-size: xx-small; text-align: center; padding: 0 10px;">
+      <p>Privacy Policy</p>
+      <p>Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information.</p>
+      <p>
+          By submitting your booking, you agree to our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+      </p>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-5" style="display: flex; align-items: center; justify-content: space-between;">
+  <!-- Center Text -->
+  <div class="text-border" style="flex-grow: 1; font-size: xx-small; text-align: center; padding: 0 10px;">
+      <p>Data Deletion Instruction</p>
+      <p>Your right to delete your personal data is important to us. If you have shared any personal data with us, you can request its deletion by following the steps.</p>
+      <p>
+          For more details, please visit our <a href="data-deletion-instruction.html" target="_blank">Data Deletion Instruction</a>.
+      </p>
+  </div>
+</div>
+
+
+            
+
+            <style>
+                /* Placeholder Effect */
+                .placeholder-effect {
+                    color: #a9a9a9;
+                }
+            </style>
+        </div>
+    </div>
+</div>
+
+<!-- Adding a spacer to separate sections -->
+<div class="custom-light-blue" style="padding: 10px; margin-top: 0px; margin-left: auto; margin-right: auto, margin-bottom- 15px"></div>
+
+<footer class="w3-padding-32 w3-black">
+  <h5 class="w3-center">Follow us on social media</h5>
+  <div class="w3-center">
+      <a href="https://www.facebook.com/ynnostudiosdigitalmirrorphotobooth" target="_blank" class="w3-button w3-black w3-hover-opacity">
+          <i class="fa fa-facebook w3-xlarge"></i>
+      </a>
+      <a href="https://www.instagram.com/ynnostudios/?igsh=NHJub3BoZXdmOXNq&fbclid=IwY2xjawGFVnZleHRuA2FlbQIxMAABHaFP1wQC9dIaexffiOM-GB6hXv1uVGkbekVXgCAmaKQ75uRKR7nhK2_87w_aem_jJ4atKqV4RC8o-r2OUVkCA" target="_blank" class="w3-button w3-black w3-hover-opacity">
+          <i class="fa fa-instagram w3-xlarge"></i>
+      </a>
+      <a href="https://www.tiktok.com/@ynnostudios" target="_blank" class="w3-button w3-black w3-hover-opacity">
+        <img src="tiktok-logo-logo-svgrepo-com.svg" alt="TikTok" style="width:24px; height:24px;">
+    </a>
+      <a href="mailto:ynnostudiosdigital@gmail.com" target="_blank" class="w3-button w3-black w3-hover-opacity">
+          <i class="fa fa-envelope w3-xlarge"></i>
+      </a>
+  </div>
+</footer>
+
+    <!-- JavaScript -->
+    <!-- JavaScript -->
+    <script>
+        // Script to open and close sidebar when on tablets and phones
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+         
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        
+        // Slideshow Apartment Images
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-opacity-off";
+        }
+        </script>
+
+
+<script>
+  // Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  // Function to increment or decrement the slide index
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  // Function to display the correct slide
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = x.length; }
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+  }
+
+  // Tab functionality
+  function openMenu(evt, menuName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("menu");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-light-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.className += " w3-light-grey";
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+
+
+</body>
+</html>
